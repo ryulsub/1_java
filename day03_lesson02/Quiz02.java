@@ -58,13 +58,11 @@ System.out.println("----------------------------------------------");
 		System.out.print("1~10 사이의 수를 입력하세요 : ");
 		
 		int number = scan.nextInt();
-		int number2 = scan.nextInt();
 		
-		if (number >= 10 && number >= 1) {
+		// number가 10보다 큰 경우 또는 number가 0 이하일 때
+		if (number > 10 || number <= 0) { // 잘못 들어온 경우 참
 			System.out.println("잘못 입력하셨습니다.");
 		}
-		if (number2 >= 10 && number2 >= 1) {
-			System.out.println("잘못 입력하셨습니다.");
-		}
+	
 	}
 }
