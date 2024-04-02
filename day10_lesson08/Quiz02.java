@@ -28,15 +28,19 @@ public class Quiz02 {
 		int age = 2024 - Integer.valueOf(yearStr);
 		System.out.println(age + "세");
 		
+		
+		
 //		3. 문자열 검색
 //		아래 문자열의 단어 개수를 출력 하세요.(중복 포함)
 		String sentence = "To be, or Not to Be. That Is The Question";
 //		출력 예시
 //		단어 개수 : 10
-		
-		
-		System.out.println("length:" + sentence.length());
-		
+		String[] words = sentence.split(" ");
+		int count = 0;
+		for(int i = 0; i < words.length; i++) {
+			count++;
+		}
+		System.out.println("단어 개수:" + words.length);
 		
 		
 		
